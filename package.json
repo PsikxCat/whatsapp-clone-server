@@ -5,7 +5,8 @@
   "description": "whatsapp clone microservices con node.js",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon --exec babel-node server.js"
+    "start": "nodemon --exec babel-node server.js",
+    "phoenix": "rm -f package-lock.json && rm -rf ./node_modules && pnpm install"
   },
   "keywords": [],
   "author": "psikocat",

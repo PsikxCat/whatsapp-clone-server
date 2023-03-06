@@ -8,6 +8,8 @@ const connectDB = () => {
   const OPTIONS = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    keepAlive: true,
+    maxpoolSize: 10,
   };
 
   return mongoose.connect(DB_CONNECTION_URL, OPTIONS);
